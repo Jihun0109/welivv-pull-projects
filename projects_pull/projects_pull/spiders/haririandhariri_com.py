@@ -54,7 +54,7 @@ class MySpider(Spider):
         item['Images'] = []
 
         images = response.xpath('//img[@class="thumb-image"]/@data-src').extract()
-        print images
+        print (images)
         for idx, img in enumerate(images):
             filename = self.get_image_filename(item['Project Name'])
             download(img, "images/{}/{}".format(self.firm_name, filename+str(idx+1)+".jpg"))

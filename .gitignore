@@ -107,5 +107,7 @@ venv.bak/
 
 
 *.csv
+*.zip
+*.rar
 projects_pull/projects_pull/.vscode
 projects_pull/images
